@@ -1,1 +1,4 @@
 PRIMEIRO ARQUIVO TXT NO GITHUB
+
+Aletarado o arquivo quando ele estava no repositorio local
+
