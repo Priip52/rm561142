@@ -9,30 +9,30 @@ dias_meta_cumprida = 0
 maior_consumo = None
 menor_consumo = None
 
-# Meta de consumo sustentável
+# Consumo sustentável
 meta = 150
 
-# Loop para entrada e processamento dos dados de consumo diário
+# Entrada dos dados de consumo diário
 for i in range(1, n + 1):
     consumo = int(input(f"Insira o consumo do dia {i}: "))
     
-    # Contagem dos dias que cumpriram a meta
+    # Contagem dos dias 
     if consumo >= meta:
         dias_meta_cumprida += 1
     
-    # Soma para cálculo da média
+    # cálculo da média
     total_consumo += consumo
     
-    # Identificação do maior e menor consumo
+    # Consumo maior e menor
     if maior_consumo is None or consumo > maior_consumo:
         maior_consumo = consumo
     if menor_consumo is None or consumo < menor_consumo:
         menor_consumo = consumo
 
-# Cálculo da média de consumo
+# média de consumo
 media_consumo = total_consumo / n
 
-# Impressão do relatório de resultados
+# Impressão dos resultados
 dias_nao_cumpriram_meta = n - dias_meta_cumprida
 
 if dias_meta_cumprida == n:
